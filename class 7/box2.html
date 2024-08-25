@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+        margin-top: 80px;
+        margin-left: 300px;
+      }
+   .container{
+    background-color: rgb(40, 39, 39);
+    color: white;
+    width: 600px;
+    height: 400px;
+    grid-template-areas: auto auto auto;
+    display: grid;
+   }
+   div{
+    background-color: rebeccapurple;
+    gap: 20px;
+    padding: 20px;
+   }
+   .item1{
+      grid-column: 1/4;
+      text-align: center;
+      border: 3px solid black;
+   }
+   .item2{
+      grid-row:2/4 ;
+      grid-column:1/2 ;
+      text-align: center;
+      padding: 30px;
+      border: 3px solid black;
+      background-color: rgb(44, 180, 134);
+   }
+   .item3{
+      grid-column:2/4 ;
+      text-align: center;
+      padding: 30px;
+      background-color: rgb(44, 44, 224);
+      border: 3px solid black;
+   }
+   .item4{
+      grid-column:2/3;
+      text-align: center;
+      padding: 30px;
+      background-color: rgb(44, 44, 224);
+      border: 3px solid black;
+   }
+   .item5{
+      grid-column:3/4;
+      text-align: center;
+      padding: 30px;
+      background-color: rgb(44, 44, 224);
+      border: 3px solid black;
+   }
+   .item6{
+      grid-column: 1/4;
+      text-align: center;
+      border: 3px solid black;
+   }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">header</div>
+        <div class="item2">sidebar</div>
+        <div class="item3">content-1</div>
+        <div class="item4">content-2</div>
+        <div class="item5">content-3</div>
+        <div class="item6">footer</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: blue;
+        }
+         .container{
+            grid-template-columns: auto auto auto auto;
+            height: 100%;
+            width: 60%;
+            display:grid ;
+            grid-template-areas: 
+            "item1 item2  item3  item3"
+            "item1 item4 item5  item6"
+            "item7 item8  item5  item9"
+            "item10 item8 item11 item11";
+            padding: 2%;
+            text-align: center;
+            margin: 3%;
+            background-color: blue;
+        
+         }
+         div{
+            background-color: white;
+            gap: 2%;
+            padding: 10%;
+
+         }
+         .item1{
+              grid-area: item1;
+         }
+         .item2{
+            grid-area: item2;
+         }
+         .item3{
+            grid-area: item3;
+         }
+         .item4{
+            grid-area: item4;
+         }
+         .item5{
+            grid-area: item5;
+            
+         }
+         .item6{
+            grid-area: item6 ;
+         }
+         .item7{
+            grid-area: item7;
+         }
+         .item8{
+            grid-area: item8;
+         }
+         .item9{
+            grid-area: item9;            ;
+         }
+         .item10{
+            grid-area: item10;
+         }
+         .item11{
+            grid-area: item11 ;
+         }
+         @media only screen and (width<500px){
+            body{
+                background-color: orchid;
+            }
+         }
+       @media only screen and (width<400px){
+        .container{
+            grid-template-columns: auto;
+            grid-template-areas: 
+          "item1"
+          "item2"
+          "item3"
+          "item4"
+          "item5"
+          "item6"
+          "item7"
+          "item8"
+          "item9"
+          "item10"
+          "item11";
+        }
+       }
+
+    </style>
+</head>
+<body>
+    <h2 style="color: white;">CSS Grid examples</h2><br>
+    <div class="container">
+    <div class="item1"> Masonry I</div>
+    <div class="item2"> Responsive</div>
+    <div class="item3"> Overlap</div>
+    <div class="item4">Fluid</div>
+    <div class="item5"> Explicitly  Placed</div>
+    <div class="item6">Negative Space  </div>
+    <div class="item7"> Masonry III</div>
+    <div class="item8">Flexible Breadth </div>
+    <div class="item9">DOM Order</div>
+    <div class="item10"> Masonry II</div>
+    <div class="item11"> Named Tracks</div>
+    </div>
+</body>
+</html>
